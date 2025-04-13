@@ -2,4 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="black_coral">#5B5D76</color>
+    <color name="coral_candy">#FCD1C8</color>
+    <color name="new_york_pink">#E07F7F</color>
+    <color name="anti_flash_white">#F2F1F1</color>
+    <color name="cultured">#F6F7F1</color>
+    <color name="rocket_metallic">#8F7B7A</color>
+    <color name="jacarta">#3D395C</color>
+    <color name="dust_storm">#E0C2C2</color>
+    <color name="pink">#FEF1EF</color>
+    <color name="light_silver">#D9D9D9</color>
+
 </resources>

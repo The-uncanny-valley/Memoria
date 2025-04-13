@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Memoria</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="memoria">Memoria</string>
+    <string name="continue_button">Continue</string>
+    <string name="learn_using">learn using</string>
+    <string name="flashcards">flashcards</string>
+    <string name="with_no_ads">with no ads</string>
+    <string name="for_free">for free</string>
 </resources>
