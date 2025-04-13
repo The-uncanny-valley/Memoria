@@ -4,6 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_onboarding"
     tools:context=".OnboardingActivity">
 
     <!--    ViewPager2 for Swiping-->
@@ -21,15 +22,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/custom_dot"
         app:tabGravity="center"
         app:tabIndicator="@null"
         app:tabIndicatorAnimationMode="linear"
-        app:tabIndicatorColor="@color/dust_storm"
         app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="0dp"
         app:tabMode="fixed"
-        app:tabRippleColor="@null" />
+        app:tabPaddingEnd="24dp"
+        app:tabPaddingStart="24dp"
+        app:tabRippleColor="@android:color/transparent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
