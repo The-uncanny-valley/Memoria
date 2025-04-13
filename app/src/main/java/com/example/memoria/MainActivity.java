@@ -5,9 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +15,13 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setBackground(null);
+
+
+
         boolean isOnboardingCompleted = checkIfOnboardingCompleted();
+        // isOnboardingCompleted = false; // for testing
 
         // If onboarding is not completed, start OnboardingActivity
         if (!isOnboardingCompleted) {
@@ -25,13 +29,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(onboardingIntent);
             finish(); // Optionally finish MainActivity to prevent going back to it
         }
-
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
     }
 
     private boolean checkIfOnboardingCompleted() {
@@ -41,3 +38,4 @@ public class MainActivity extends AppCompatActivity {
         return preferences.getBoolean("onboardingCompleted", false);
     }
 }
+
