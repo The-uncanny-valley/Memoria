@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_onboarding">
+    android:layout_height="match_parent">
 
 
     <ImageView
@@ -63,11 +62,11 @@
         android:focusable="true"
         android:letterSpacing="0.05"
         android:padding="16dp"
-        android:text="@string/skip_button"
+        android:text="@string/continue_button"
         android:textColor="@color/black_coral"
         android:textSize="20sp"
         android:gravity="center_vertical"
-        android:drawableEnd="@drawable/caret_icon"
+        app:drawableEndCompat="@drawable/caret_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
