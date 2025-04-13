@@ -17,7 +17,7 @@ public class OnboardingFragment1 extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_onboarding_1, container, false);
     }
 }
+
